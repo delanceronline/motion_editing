@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding = "big5"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.00"
+	Name="KungfuMotion"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="MFCProj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory=".\Debug"
+			IntermediateDirectory=".\Debug"
+			ConfigurationType="1"
+			UseOfMFC="2"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				UsePrecompiledHeader="3"
+				PrecompiledHeaderThrough="stdafx.h"
+				PrecompiledHeaderFile=".\Debug/KungfuMotion.pch"
+				AssemblerListingLocation=".\Debug/"
+				ObjectFile=".\Debug/"
+				ProgramDataBaseFileName=".\Debug/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="4"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions="/MACHINE:I386"
+				AdditionalDependencies="opengl32.lib glu32.lib glaux.lib"
+				OutputFile=".\Debug/KungfuMotion.exe"
+				LinkIncremental="2"
+				SuppressStartupBanner="TRUE"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile=".\Debug/KungfuMotion.pdb"
+				SubSystem="2"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="_DEBUG"
+				MkTypLibCompatible="TRUE"
+				SuppressStartupBanner="TRUE"
+				TargetEnvironment="1"
+				TypeLibraryName=".\Debug/KungfuMotion.tlb"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_AFXDLL;_DEBUG"
+				Culture="1033"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory=".\Release"
+			IntermediateDirectory=".\Release"
+			ConfigurationType="1"
+			UseOfMFC="2"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				InlineFunctionExpansion="1"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
+				StringPooling="TRUE"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="TRUE"
+				UsePrecompiledHeader="3"
+				PrecompiledHeaderThrough="stdafx.h"
+				PrecompiledHeaderFile=".\Release/KungfuMotion.pch"
+				AssemblerListingLocation=".\Release/"
+				ObjectFile=".\Release/"
+				ProgramDataBaseFileName=".\Release/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions="/MACHINE:I386"
+				OutputFile=".\Release/KungfuMotion.exe"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				ProgramDatabaseFile=".\Release/KungfuMotion.pdb"
+				SubSystem="2"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				MkTypLibCompatible="TRUE"
+				SuppressStartupBanner="TRUE"
+				TargetEnvironment="1"
+				TypeLibraryName=".\Release/KungfuMotion.tlb"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_AFXDLL;NDEBUG"
+				Culture="1033"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath=".\ChildFrm.cpp">
+			</File>
+			<File
+				RelativePath=".\CurveView.cpp">
+			</File>
+			<File
+				RelativePath=".\DoubleScreenDialog.cpp">
+			</File>
+			<File
+				RelativePath=".\FilterDialog.cpp">
+			</File>
+			<File
+				RelativePath=".\KungfuMotion.cpp">
+			</File>
+			<File
+				RelativePath=".\KungfuMotion.rc">
+			</File>
+			<File
+				RelativePath=".\KungfuMotionData.cpp">
+			</File>
+			<File
+				RelativePath=".\KungfuMotionDoc.cpp">
+			</File>
+			<File
+				RelativePath=".\KungfuMotionView.cpp">
+			</File>
+			<File
+				RelativePath=".\MainFrm.cpp">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\MarkerSeq.cpp">
+			</File>
+			<File
+				RelativePath=".\MarkerView.cpp">
+			</File>
+			<File
+				RelativePath=".\MotionBlendingDialog.cpp">
+			</File>
+			<File
+				RelativePath=".\Motion Editing\MotionEditing.cpp">
+			</File>
+			<File
+				RelativePath=".\MotionExtractionDialog.cpp">
+			</File>
+			<File
+				RelativePath=".\MotionWarping.cpp">
+			</File>
+			<File
+				RelativePath=".\SnapShotDialog.cpp">
+			</File>
+			<File
+				RelativePath=".\StdAfx.cpp">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl">
+			<File
+				RelativePath=".\ChildFrm.h">
+			</File>
+			<File
+				RelativePath=".\CurveView.h">
+			</File>
+			<File
+				RelativePath=".\DoubleScreenDialog.h">
+			</File>
+			<File
+				RelativePath=".\FilterDialog.h">
+			</File>
+			<File
+				RelativePath=".\KungfuMotion.h">
+			</File>
+			<File
+				RelativePath=".\KungfuMotionData.h">
+			</File>
+			<File
+				RelativePath=".\KungfuMotionDoc.h">
+			</File>
+			<File
+				RelativePath=".\KungfuMotionView.h">
+			</File>
+			<File
+				RelativePath=".\MainFrm.h">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\MarkerSeq.h">
+			</File>
+			<File
+				RelativePath=".\MarkerView.h">
+			</File>
+			<File
+				RelativePath=".\MotionBlendingDialog.h">
+			</File>
+			<File
+				RelativePath=".\Motion Editing\MotionEditing.h">
+			</File>
+			<File
+				RelativePath=".\MotionExtractionDialog.h">
+			</File>
+			<File
+				RelativePath=".\MotionWarping.h">
+			</File>
+			<File
+				RelativePath=".\Resource.h">
+			</File>
+			<File
+				RelativePath=".\SnapShotDialog.h">
+			</File>
+			<File
+				RelativePath=".\StdAfx.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
+			<File
+				RelativePath=".\res\KungfuMotion.ico">
+			</File>
+			<File
+				RelativePath=".\res\KungfuMotion.rc2">
+			</File>
+			<File
+				RelativePath=".\res\KungfuMotionDoc.ico">
+			</File>
+			<File
+				RelativePath=".\res\Toolbar.bmp">
+			</File>
+			<File
+				RelativePath=".\res\ico00001.ico">
+			</File>
+			<File
+				RelativePath=".\RES\ico00002.ico">
+			</File>
+			<File
+				RelativePath=".\RES\ico00003.ico">
+			</File>
+			<File
+				RelativePath=".\RES\ico00004.ico">
+			</File>
+			<File
+				RelativePath=".\RES\ico00005.ico">
+			</File>
+			<File
+				RelativePath=".\RES\ico00006.ico">
+			</File>
+			<File
+				RelativePath=".\res\icon1.ico">
+			</File>
+			<File
+				RelativePath=".\RES\joint.ico">
+			</File>
+			<File
+				RelativePath=".\res\kung fu.ico">
+			</File>
+			<File
+				RelativePath=".\RES\motion_s.ico">
+			</File>
+			<File
+				RelativePath=".\res\polyu.bmp">
+			</File>
+			<File
+				RelativePath=".\res\toolbar1.bmp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Curve Fitting Source"
+			Filter="cpp">
+			<File
+				RelativePath=".\Curve Fitting\ControlPoint.cpp">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\ControlPointSet.cpp">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\CubicBSplineCurve.cpp">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\DOFName.cpp">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\Matrix.cpp">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\MotionCurves_UCBS.cpp">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\MotionData.cpp">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\MotionMarker.cpp">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\PathPoint.cpp">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\PathPointSet.cpp">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\Point2D.cpp">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\Vector3D.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Curve Fitting Header"
+			Filter="h">
+			<File
+				RelativePath=".\Curve Fitting\ControlPoint.h">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\ControlPointSet.h">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\CubicBSplineCurve.h">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\DOFName.h">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\Matrix.h">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\MotionCurves_UCBS.h">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\MotionData.h">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\MotionMarker.h">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\PathPoint.h">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\PathPointSet.h">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\Point2D.h">
+			</File>
+			<File
+				RelativePath=".\Curve Fitting\Vector3D.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Motion Preview Source"
+			Filter="cpp">
+			<File
+				RelativePath=".\Motion Preview\MotionPreviewDialog.cpp">
+			</File>
+			<File
+				RelativePath=".\Motion Preview\motionpreviewscreen.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Motion Preview Header"
+			Filter="h">
+			<File
+				RelativePath=".\Motion Preview\MotionPreviewDialog.h">
+			</File>
+			<File
+				RelativePath=".\Motion Preview\MotionPreviewScreen.h">
+			</File>
+		</Filter>
+		<File
+			RelativePath=".\ReadMe.txt">
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

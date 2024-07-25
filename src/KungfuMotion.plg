@@ -1,0 +1,134 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: KungfuMotion - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/KungfuMotion.res" /d "NDEBUG" /d "_AFXDLL" "D:\Coding\kungfu\KungfuMotion.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC4.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/KungfuMotion.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Coding\kungfu\ChildFrm.cpp"
+"D:\Coding\kungfu\CurveView.cpp"
+"D:\Coding\kungfu\DoubleScreenDialog.cpp"
+"D:\Coding\kungfu\FilterDialog.cpp"
+"D:\Coding\kungfu\KungfuMotion.cpp"
+"D:\Coding\kungfu\KungfuMotionData.cpp"
+"D:\Coding\kungfu\KungfuMotionDoc.cpp"
+"D:\Coding\kungfu\KungfuMotionView.cpp"
+"D:\Coding\kungfu\MainFrm.cpp"
+"D:\Coding\kungfu\Curve Fitting\MarkerSeq.cpp"
+"D:\Coding\kungfu\MarkerView.cpp"
+"D:\Coding\kungfu\MotionBlendingDialog.cpp"
+"D:\Coding\kungfu\Motion Editing\MotionEditing.cpp"
+"D:\Coding\kungfu\MotionExtractionDialog.cpp"
+"D:\Coding\kungfu\MotionWarping.cpp"
+"D:\Coding\kungfu\SnapShotDialog.cpp"
+"D:\Coding\kungfu\Curve Fitting\ControlPoint.cpp"
+"D:\Coding\kungfu\Curve Fitting\ControlPointSet.cpp"
+"D:\Coding\kungfu\Curve Fitting\CubicBSplineCurve.cpp"
+"D:\Coding\kungfu\Curve Fitting\DOFName.cpp"
+"D:\Coding\kungfu\Curve Fitting\Matrix.cpp"
+"D:\Coding\kungfu\Curve Fitting\MotionCurves_UCBS.cpp"
+"D:\Coding\kungfu\Curve Fitting\MotionData.cpp"
+"D:\Coding\kungfu\Curve Fitting\MotionMarker.cpp"
+"D:\Coding\kungfu\Curve Fitting\PathPoint.cpp"
+"D:\Coding\kungfu\Curve Fitting\PathPointSet.cpp"
+"D:\Coding\kungfu\Curve Fitting\Point2D.cpp"
+"D:\Coding\kungfu\Curve Fitting\Vector3D.cpp"
+"D:\Coding\kungfu\Motion Preview\MotionPreviewDialog.cpp"
+"D:\Coding\kungfu\Motion Preview\motionpreviewscreen.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC4.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC5.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/KungfuMotion.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Coding\kungfu\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC5.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC6.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/KungfuMotion.pdb" /machine:I386 /out:"Release/KungfuMotion.exe" 
+.\Release\ChildFrm.obj
+.\Release\CurveView.obj
+.\Release\DoubleScreenDialog.obj
+.\Release\FilterDialog.obj
+.\Release\KungfuMotion.obj
+.\Release\KungfuMotionData.obj
+.\Release\KungfuMotionDoc.obj
+.\Release\KungfuMotionView.obj
+.\Release\MainFrm.obj
+.\Release\MarkerSeq.obj
+.\Release\MarkerView.obj
+.\Release\MotionBlendingDialog.obj
+.\Release\MotionEditing.obj
+.\Release\MotionExtractionDialog.obj
+.\Release\MotionWarping.obj
+.\Release\SnapShotDialog.obj
+.\Release\StdAfx.obj
+.\Release\ControlPoint.obj
+.\Release\ControlPointSet.obj
+.\Release\CubicBSplineCurve.obj
+.\Release\DOFName.obj
+.\Release\Matrix.obj
+.\Release\MotionCurves_UCBS.obj
+.\Release\MotionData.obj
+.\Release\MotionMarker.obj
+.\Release\PathPoint.obj
+.\Release\PathPointSet.obj
+.\Release\Point2D.obj
+.\Release\Vector3D.obj
+.\Release\MotionPreviewDialog.obj
+.\Release\motionpreviewscreen.obj
+.\Release\KungfuMotion.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC6.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ChildFrm.cpp
+CurveView.cpp
+DoubleScreenDialog.cpp
+FilterDialog.cpp
+KungfuMotion.cpp
+KungfuMotionData.cpp
+KungfuMotionDoc.cpp
+KungfuMotionView.cpp
+MainFrm.cpp
+MarkerSeq.cpp
+MarkerView.cpp
+MotionBlendingDialog.cpp
+MotionEditing.cpp
+MotionExtractionDialog.cpp
+MotionWarping.cpp
+SnapShotDialog.cpp
+ControlPoint.cpp
+ControlPointSet.cpp
+CubicBSplineCurve.cpp
+DOFName.cpp
+Generating Code...
+Compiling...
+Matrix.cpp
+MotionCurves_UCBS.cpp
+MotionData.cpp
+MotionMarker.cpp
+PathPoint.cpp
+PathPointSet.cpp
+Point2D.cpp
+Vector3D.cpp
+MotionPreviewDialog.cpp
+motionpreviewscreen.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+KungfuMotion.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,757 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Hong Kong SAR) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ZHH)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_HONGKONG
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_CURVE_FIT
+    SEPARATOR
+    BUTTON      ID_TOOL_SELECT_CURVE
+    BUTTON      ID_TOOL_SELECT_POINT
+    BUTTON      ID_TOOL_INSERT_POINT
+    BUTTON      ID_TOOL_DELETE_POINT
+    SEPARATOR
+    BUTTON      ID_TOOL_MERGE_POINT
+    BUTTON      ID_TOOL_SPLIT_POINT
+    SEPARATOR
+    BUTTON      ID_TOOL_FLATTEN
+    BUTTON      ID_TOOL_SHARPEN
+    SEPARATOR
+    BUTTON      ID_TOOL_SINGLE_TANGENT
+    BUTTON      ID_TOOL_DOUBLE_TANGENT
+    SEPARATOR
+    BUTTON      ID_VIEW_MOVE
+    BUTTON      ID_VIEW_ZOOM_IN
+    BUTTON      ID_VIEW_ZOOM_OUT
+    BUTTON      ID_VIEW_RESET
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_FIGHT               ICON                    "res\\icon1.ico"
+IDI_LOGO                ICON                    "res\\ico00001.ico"
+#endif    // Chinese (Hong Kong SAR) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\KungfuMotion.ico"
+IDR_KUNGFUTYPE          ICON                    "res\\KungfuMotionDoc.ico"
+IDI_JOINT               ICON                    "res\\ico00002.ico"
+IDI_CURVE               ICON                    "res\\ico00003.ico"
+IDI_ENDSITE             ICON                    "res\\ico00004.ico"
+IDI_MOTION              ICON                    "res\\ico00005.ico"
+IDI_SELECTED            ICON                    "res\\ico00006.ico"
+IDI_JOINT_1             ICON                    "RES\\joint.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\KungfuMotion.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Project\tCtrl+N",        ID_FILE_NEW_PROJECT
+        MENUITEM "&Open Project...\tCtrl+O",    ID_FILE_OPEN_PROJECT
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent Project",              ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Help",                        ID_HELP_HELP
+        MENUITEM "&About Kungfu Motion...",     ID_APP_ABOUT_KUNGFU_MOTION
+    END
+END
+
+IDR_KUNGFUTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Project\tCtrl+N",        ID_FILE_NEW_PROJECT
+        MENUITEM "&Open Project...\tCtrl+O",    ID_FILE_OPEN_PROJECT
+        MENUITEM "&Close Project",              ID_FILE_CLOSE_PROJECT
+        MENUITEM "&Save Project\tCtrl+S",       ID_FILE_SAVE_PROJECT
+        MENUITEM "Save Project &As...",         ID_FILE_SAVE_PROJECT_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Import",                      ID_FILE_IMPORT
+        MENUITEM "Export",                      ID_FILE_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM "Save Snapshot",               ID_FILE_SAVESNAPSHOT
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "Redo",                        ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Move",                        ID_VIEW_MOVE
+        MENUITEM "Zoom In",                     ID_VIEW_ZOOM_IN
+        MENUITEM "Zoom Out",                    ID_VIEW_ZOOM_OUT
+        MENUITEM "Reset",                       ID_VIEW_RESET
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Control Points",              ID_VIEW_CP
+        MENUITEM "Path Points",                 ID_VIEW_PP, CHECKED
+        MENUITEM "Interpolated Points",         ID_VIEW_IP
+    END
+    POPUP "&Curve"
+    BEGIN
+        MENUITEM "Fit Curve",                   ID_CURVE_FIT
+        MENUITEM SEPARATOR
+        MENUITEM "Select Curve",                ID_CURVE_SELECT_CURVE
+        MENUITEM "Select Point",                ID_CURVE_SELECT_POINT
+        MENUITEM "Insert Point",                ID_CURVE_INSERT_POINT
+        MENUITEM "Delete Point",                ID_CURVE_DELETE_POINT
+        MENUITEM SEPARATOR
+        MENUITEM "Merge Points",                ID_CURVE_MERGE_POINT
+        MENUITEM "Split Point",                 ID_CURVE_SPLIT_POINT
+        MENUITEM SEPARATOR
+        MENUITEM "Flatten",                     ID_CURVE_FLATTEN
+        MENUITEM "Sharpen",                     ID_CURVE_SHARPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Single Tangent",              ID_CURVE_SINGLE_TANGENT
+        , CHECKED
+        MENUITEM "Double Tangent",              ID_CURVE_DOUBLE_TANGENT
+        , CHECKED
+    END
+    POPUP "&Motion"
+    BEGIN
+        MENUITEM "Preview",                     ID_MOTION_PREVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "Blending",                    ID_MOTION_BLENDING
+        MENUITEM "Concatenation",               ID_MOTION_TRANSITION
+        MENUITEM "Exaggeration",                ID_MOTION_EXAGGERATING
+        MENUITEM "Extraction",                  ID_MOTION_EXTRACTING
+        MENUITEM "Substitution",                ID_MOTION_REPLACING
+        MENUITEM "Warping",                     ID_MOTION_WARPING
+        MENUITEM SEPARATOR
+        MENUITEM "Filter",                      ID_MOTION_FILTER
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Help",                        ID_HELP_HELP
+        MENUITEM "&About MotionEditing...",     ID_APP_ABOUT_KUNGFU_MOTION
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About KungfuMotion"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "MotionEditing Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PREVIEW_DIALOG DIALOGEX 0, 0, 244, 211
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Motion Preview Dialog"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,190,185,47,14
+    CONTROL         "Slider1",IDC_FRAMESILDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,5,165,235,12
+    PUSHBUTTON      "Play",IDC_PREVIEW_PLAY,40,185,40,15,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Stop",IDC_PREVIEW_STOP,10,185,25,15,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Pause",IDC_PREVIEW_PAUSE,85,185,25,15,0,
+                    WS_EX_STATICEDGE
+    GROUPBOX        "Screen",IDC_MOTION_PREVIEW_SCREEN_BORDER,10,5,225,155,
+                    NOT WS_VISIBLE,WS_EX_TRANSPARENT
+    CONTROL         "Slider1",IDC_MARKERSIZESILDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,120,185,50,10
+END
+
+IDD_BLENDING_OPTION_DIALOG DIALOG  0, 0, 234, 151
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blending Option Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,160,130,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,25,130,50,14
+    CONTROL         "Slider1",IDC_BLENDINGVALUE_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,80,70,100,15
+    CONTROL         "Slider2",IDC_STARTFRAME_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,80,20,100,15
+    CONTROL         "Slider3",IDC_ENDFRAME_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,80,45,100,15
+    LTEXT           "Start Frame:",IDC_STATIC,36,22,40,10
+    LTEXT           "End Frame:",IDC_STATIC,38,47,39,8
+    LTEXT           "Similarity:",IDC_STATIC,41,72,34,8
+    EDITTEXT        IDC_MOTIONNAME_TEXTBOX,85,95,90,12,ES_AUTOHSCROLL
+    LTEXT           "Motion Name:",IDC_STATIC,29,96,49,8
+END
+
+IDD_DOUBLESCREEN_DIALOG DIALOGEX 0, 0, 339, 316
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,280,295,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,225,295,50,14
+    GROUPBOX        "Static",IDC_SCREEN1_BORDER,10,5,145,105,NOT WS_VISIBLE,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Slider1",IDC_SCREEN2_STARTFRAME_SLIDER,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_BORDER | 
+                    WS_TABSTOP,185,125,145,15,WS_EX_CLIENTEDGE
+    CONTROL         "Slider1",IDC_SCREEN1_STARTFRAME_SLIDER,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_BORDER | 
+                    WS_TABSTOP,10,125,145,15,WS_EX_CLIENTEDGE
+    CONTROL         "Slider1",IDC_RADIUS1_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,40,170,85,10
+    CONTROL         "Slider1",IDC_RADIUS2_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,215,170,85,10
+    LTEXT           "Start Frame:",IDC_STATIC,15,115,55,8
+    LTEXT           "Start Frame:",IDC_STATIC,190,115,55,8
+    CONTROL         "Slider1",IDC_SCREEN1_ENDFRAME_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_BORDER | WS_TABSTOP,10,150,
+                    145,15,WS_EX_CLIENTEDGE
+    LTEXT           "End Frame:",IDC_STATIC,15,140,45,8
+    LTEXT           "End Frame:",IDC_STATIC,190,140,45,8
+    CONTROL         "Slider1",IDC_SCREEN2_ENDFRAME_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_BORDER | WS_TABSTOP,185,150,
+                    145,15,WS_EX_CLIENTEDGE
+    CONTROL         "Tree1",IDC_MARKERTREE_DOUBLESCREEN,"SysTreeView32",
+                    TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | 
+                    TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,10,185,140,
+                    105
+    CONTROL         "List1",IDC_SELECTEDMARKERLIST,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | 
+                    LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,190,185,140,105
+    PUSHBUTTON      "---->",IDC_SELECTION_BUTTON_DOUBLESCREEN,155,205,30,14,
+                    0,WS_EX_DLGMODALFRAME
+    CONTROL         "Slider1",IDC_SIMVAL_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,120,295,100,15
+    LTEXT           "Similarity:",IDC_SIMVAL_STATIC,83,297,34,10
+    GROUPBOX        "Static",IDC_SCREEN2_BORDER,185,5,145,105,NOT WS_VISIBLE,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "M",IDC_SKETELON_BUTTON,160,125,20,10,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "J",IDC_JOINT_BUTTON,160,150,20,10,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "<----",IDC_DESELECTION_BUTTON_DOUBLESCREEN,155,255,30,
+                    14,0,WS_EX_DLGMODALFRAME
+    CTEXT           "0.0",IDC_SimVal,155,235,30,10
+    LTEXT           "Static",IDC_S1_STARTFRAME_STATIC,70,115,85,8
+    LTEXT           "Static",IDC_S1_ENDFRAME_STATIC,70,140,85,8
+    LTEXT           "Static",IDC_S2_STARTFRAME_STATIC,245,115,85,8
+    LTEXT           "Static",IDC_S2_ENDFRAME_STATIC,245,140,85,8
+    LTEXT           "Static",IDC_S1_MARKERSIZE_STATIC,130,170,25,8
+    LTEXT           "Static",IDC_S2_MARKERSIZE_STATIC,305,170,25,8
+    LTEXT           "Size:",IDC_STATIC,10,170,18,8
+    LTEXT           "Size:",IDC_STATIC,190,170,18,8
+    EDITTEXT        IDC_MOTIONNAME_TEXTBOX,10,295,64,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "All ---->",IDC_SELECTIONALL_BUTTON_DOUBLESCREEN,155,185,
+                    30,14,0,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "<---- All",IDC_DESELECTIONALL_BUTTON_DOUBLESCREEN,155,
+                    275,30,14,0,WS_EX_DLGMODALFRAME
+END
+
+IDD_EXTRACT_DIALOG DIALOGEX 0, 0, 264, 231
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Extraction"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,204,210,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,144,210,50,14
+    GROUPBOX        "Static",IDC_SCREEN_EXTRACTION_BORDER,5,5,255,145,NOT 
+                    WS_VISIBLE,WS_EX_TRANSPARENT
+    CONTROL         "Slider1",IDC_STARTFRAME_EXTRACTION_SLIDER,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,
+                    5,170,100,15
+    CONTROL         "Slider2",IDC_ENDFRAME_EXTRACTION_SLIDER,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,
+                    135,170,100,15
+    LTEXT           "Static",IDC_STARTFRAME_EXTRACTION_STATIC,110,175,19,10
+    LTEXT           "Static",IDC_ENDFRAME_EXTRACTION_STATIC,240,175,19,10
+    LTEXT           "Start Frame:",IDC_STATIC,10,155,41,8
+    LTEXT           "End Frame:",IDC_STATIC,140,155,38,8
+    EDITTEXT        IDC_MOTIONNAME_EXTRACTION_TEXTBOX,74,210,55,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "New Motion Name:",IDC_STATIC,10,212,62,8
+    CONTROL         "Slider1",IDC_MARKERSIZE_EXTRACTION_SLIDER,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,
+                    94,190,100,13
+    LTEXT           "Marker Size:",IDC_STATIC,51,192,42,8
+    LTEXT           "Static",IDC_MARKERSIZE_EXTRACTION_STATIC,194,192,19,8
+END
+
+IDD_WARPING_DIALOG DIALOGEX 0, 0, 239, 241
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Motion Warping"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,180,215,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,120,215,50,14
+    GROUPBOX        "Static",IDC_WARPING_BORDER,5,5,230,145,NOT WS_VISIBLE,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Slider1",IDC_FRAME_WARPING_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,5,155,230,15
+    LTEXT           "Duration:",IDC_STATIC,120,178,31,8
+    LTEXT           "Frame Rate:",IDC_STATIC,110,198,41,8
+    EDITTEXT        IDC_DURATION_TEXTBOX,156,175,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FPS_TEXTBOX,156,195,40,14,ES_AUTOHSCROLL
+    LTEXT           "second(s)",IDC_STATIC,200,178,33,8
+    CONTROL         "Slider1",IDC_MARKERSIZE_WARPING_SLIDER,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,
+                    56,178,60,10
+    LTEXT           "Marker Size:",IDC_STATIC,9,178,42,8
+    LTEXT           "FPS",IDC_STATIC,200,198,14,8
+    LTEXT           "Motion Name:",IDC_STATIC,10,217,46,8
+    EDITTEXT        IDC_MOTIONNAME_WARPING_TEXTBOX,60,215,40,14,
+                    ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_ORIGINALDURATION_WARPING_STATIC,9,198,94,8
+END
+
+IDD_SNAPSHOT_DIALOG DIALOGEX 0, 0, 219, 221
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Save Snapshot"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,160,195,50,14
+    GROUPBOX        "Static",IDC_SNAPSHOT_BORDER,5,5,135,130,NOT WS_VISIBLE,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "Save as",IDC_SAVE_SNAPSHOT_BUTTON,155,120,50,14
+    EDITTEXT        IDC_TIME_SNAPSHOT_TEXTBOX,76,170,41,13,ES_AUTOHSCROLL
+    LTEXT           "Frame:",IDC_STATIC,52,172,24,8
+    CONTROL         "Tree1",IDC_MOTIONTREE_SNAPSHOT_TREE,"SysTreeView32",
+                    WS_BORDER | WS_TABSTOP,140,10,75,105
+    PUSHBUTTON      "Show",IDC_SHOW_SNAPSHOT_BUTTON,127,170,40,13,0,
+                    WS_EX_STATICEDGE
+    CONTROL         "Slider1",IDC_FRAME_SNAPSHOT_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,5,145,210,15
+    CONTROL         "Slider1",IDC_MARKERSIZE_SNAPSHOT_SLIDER,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,
+                    59,195,100,15
+    LTEXT           "Marker Size:",IDC_STATIC,17,197,42,8
+END
+
+IDD_FILTER_DIALOG DIALOG  0, 0, 119, 126
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Filter Option"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "Apply",IDOK,65,100,30,14
+    PUSHBUTTON      "Cancel",IDCANCEL,25,100,30,14
+    CONTROL         "Ignore sign change",IDC_IGNORESIGN_FILTER_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,21,80,78,10
+    LTEXT           "Tolerance:",IDC_STATIC,20,57,35,8
+    EDITTEXT        IDC_TOLERANCE_FILTER_EDIT,59,55,40,12,ES_AUTOHSCROLL
+    LTEXT           "Motion Name:",IDC_STATIC,5,5,46,8
+    LTEXT           "Curve Name:",IDC_STATIC,5,35,43,8
+    LTEXT           "",IDC_MOTIONNAME_FILTER_STATIC,56,5,59,8
+    LTEXT           "",IDC_CURVENAME_FILTER_STATIC,55,35,60,8
+    LTEXT           "Marker name:",IDC_STATIC,5,20,46,8
+    LTEXT           "",IDC_MARKERNAMESTATIC,55,20,60,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "KungfuMotion MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "KungfuMotion"
+            VALUE "LegalCopyright", "Copyright (C) 2002"
+            VALUE "OriginalFilename", "KungfuMotion.EXE"
+            VALUE "ProductName", "KungfuMotion Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PREVIEW_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 237
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_BLENDING_OPTION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_DOUBLESCREEN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 332
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 309
+    END
+
+    IDD_EXTRACT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_WARPING_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    IDD_SNAPSHOT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_FILTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 112
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "KungfuMotion"
+    IDR_KUNGFUTYPE          "\nKungfu\nKungfu\n\n\nKungfuMotion.Document\nKungfu Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "KungfuMotion"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\KungfuMotion.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
