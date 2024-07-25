@@ -6,6 +6,10 @@ Motion capture seems to be an ideal solution to bring realistic and natural moti
 
 ## User Interface
 
+<p align="center">
+  <img src="./images/EditTool.jpg">
+</p>
+
 1. Panel
 
 There are two main views in the system: Selection View and Curve View.  The Selection View lets the user select a motion or a joint listed in the view.  The Curve View displays the curve(s) of a joint which is being selected in the Selection View.
